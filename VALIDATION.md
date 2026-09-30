@@ -23,3 +23,5 @@ These are Chromium checks; Safari and real-device testing have not been performe
 All 36 records now include two potential benefits, an illustrative nonprofit workflow, and required inputs. The selected detail panel exposes benefits directly and uses a native expandable section for examples and inputs. Search includes this content. These are editorial hypotheses and invented examples; no measured savings or customer deployments are claimed.
 
 Validation: catalog integrity and existing calculator regression checks passed; JavaScript syntax and diff checks passed. Local Chromium tested all 36 expanded detail views. At 320, 390, 768 and 1440 pixels, keyboard expansion, selected-case deep links, rich-content search and Pilot Value handoff passed with no horizontal overflow or page errors. Expanded mobile and desktop screenshots were reviewed. Safari and physical devices were not tested.
+
+The presentation now matches the revised government Explorer: a highlighted Potential value box, a collapsed See an example in practice disclosure, and the same card action wording. Nonprofit-specific content and required inputs remain intact.

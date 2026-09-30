@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#faf9f5" />
+    <meta name="description" content="Explore nonprofit workflows where Claude may help, with suggested product routes, pilot measures, and deployment questions." />
+    <title>Nonprofit Use Cases | JayAI Nonprofit AI Planner</title>
+    <link rel="icon" href="assets/jayai-favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=mobile-flow-2" />
+    <link rel="stylesheet" href="use-cases.css?v=mobile-flow-2" />
+    <script src="use-cases-data.js" defer></script>
+    <script src="use-cases.js?v=mobile-flow-2" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="JayAI nonprofit planner home"><img src="assets/jayai-wordmark-transparent.png" alt="" width="120" height="34" /><span>Nonprofit<span class="brand-accent"> AI Planner</span></span></a><nav aria-label="Main navigation"><a href="use-cases.html" aria-current="page">Explore use cases</a><a href="models.html">Models & cost</a><a href="pilot-value.html">Pilot value</a></nav></div></header>
+    <p class="independence-banner">Independent JayAI project · Not affiliated with Anthropic</p>
+    <main id="main" class="catalog wrap">
+      <div class="catalog-intro"><p class="eyebrow">Use case explorer / working catalog</p><h1>Find a useful starting point for your mission.</h1><p>Begin with a curated set of pilot candidates, or explore the full catalog by mission area, organization form, function, and Claude route. Each workflow has suggested measures and questions to resolve before deployment.</p></div>
+      <div class="catalog-view" role="group" aria-label="Catalog view"><button id="view-featured" type="button" aria-pressed="true">Featured pilots <span>12</span></button><button id="view-all" type="button" aria-pressed="false">All use cases <span>36</span></button></div>
+      <button class="filter-toggle" id="filter-toggle" type="button" aria-expanded="false" aria-controls="catalog-controls">Filters <span aria-hidden="true">▾</span></button>
+      <div class="catalog-controls" id="catalog-controls" aria-label="Filter use cases"><label class="search-label" for="case-search">Search workflows<input id="case-search" type="search" placeholder="Search by task or outcome" autocomplete="off" /></label><label for="org-filter">Mission area<select id="org-filter"><option value="all">All mission areas</option></select></label><label for="form-filter">Organization form<select id="form-filter"><option value="all">All forms</option></select></label><label for="department-filter">Team / function<select id="department-filter"><option value="all">All functions</option></select></label><label for="route-filter">Claude route<select id="route-filter"><option value="all">All routes</option><option value="Chat">Chat</option><option value="Cowork">Claude tasks (Cowork)</option><option value="Code">Code</option><option value="API">API</option></select></label></div>
+      <div class="size-guidance"><label for="size-guide">Your organization’s scale<select id="size-guide"><option value="unknown">Choose an annual expense band (optional)</option><option value="small">Under $500K</option><option value="medium">$500K to under $10M</option><option value="large">$10M and above</option></select></label><p id="size-note" role="status">Scale helps plan support and oversight. It does not filter out workflows or determine eligibility.</p></div><div class="catalog-summary"><span id="result-count" role="status" aria-live="polite">12 featured use cases</span><button id="clear-filters" type="button">Clear filters</button></div>
+      <div class="catalog-layout"><div class="case-grid" id="case-grid" aria-label="Use cases"></div><aside class="case-detail" id="case-detail" aria-live="polite" aria-atomic="true"><p class="detail-kicker">Select a use case</p><h2>Explore a workflow</h2><p>Choose a card to inspect its likely route, pilot measure, and deployment questions.</p></aside></div>
+      <div class="catalog-method"><strong>How this catalog was made</strong><p>The featured set is an editorial shortlist of bounded, measurable pilot ideas. All workflows are illustrative JayAI proposals, not verified adoption or outcome claims. Mission areas are practical browsing categories informed by <a href="https://nccs.urban.org/nccs/resources/ntee/" target="_blank" rel="noopener noreferrer">NCCS’s NTEE taxonomy ↗</a>; missions overlap, so one workflow can fit several types. Organization form, function, and Claude route tags are starting hypotheses to test in discovery.</p><p>Sector themes were checked against <a href="https://claude.com/solutions/nonprofits" target="_blank" rel="noopener noreferrer">Anthropic’s nonprofit resources ↗</a> on September 30, 2026. A catalog match does not establish eligibility for Anthropic’s nonprofit program. No measured benefits from other organizations are used as pilot assumptions.</p></div>
+    </main>
+    <footer class="site-footer"><div class="wrap footer-inner"><div><strong>JayAI · Nonprofit AI Planner</strong><p>An independent JayAI project for exploring responsible nonprofit AI decisions.</p></div><p>Not affiliated with or endorsed by Anthropic. Product fit, pricing, security, and procurement requirements must be verified for each deployment. Typography requests fonts from Google Fonts; calculator entries stay in your browser except the disclosed API or seat-cost URL handoff.</p></div></footer>
+  <noscript><p class="noscript-note">This interactive planner needs JavaScript to calculate and show use cases.</p></noscript>
+  </body>
+</html>

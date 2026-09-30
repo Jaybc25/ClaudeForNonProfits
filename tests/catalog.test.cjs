@@ -11,7 +11,8 @@ const c=context.catalog;
 test('every catalog record has valid tags and a complete pilot',()=>{
  assert.equal(c.useCases.length,36);assert.equal(new Set(c.useCases.map(x=>x.id)).size,36);
  assert.equal(c.featuredCaseIds.length,12);
- for(const x of c.useCases){for(const field of ['id','title','summary','pilot','measure','validate'])assert.ok(x[field]?.trim(),x.id+':'+field);
+ for(const x of c.useCases){for(const field of ['id','title','summary','pilot','measure','validate','inPractice','inputs'])assert.ok(x[field]?.trim(),x.id+':'+field);
+ assert.equal(x.benefits.length,2);for(const benefit of x.benefits)assert.ok(benefit.trim());
  assert.ok(['Chat','Cowork','Code','API'].includes(x.route));assert.ok(c.departments[x.department]);
  for(const k of x.orgs)assert.ok(c.organizations[k]);for(const k of x.forms)assert.ok(c.organizationForms[k]);}
  for(const id of c.featuredCaseIds)assert.ok(c.useCases.some(x=>x.id===id));

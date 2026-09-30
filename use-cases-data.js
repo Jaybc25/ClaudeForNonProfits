@@ -59,7 +59,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less time assembling a first draft from scattered program facts.",
+      "Clearer coverage of a funder’s questions before staff review."
+    ],
+    "inPractice": "A youth-service nonprofit gives Claude an approved program brief and a funder’s question list. Claude drafts a needs statement, links claims to supplied evidence, and flags missing facts. The grants lead verifies every claim and approves the final submission.",
+    "inputs": "Approved program facts, verified outcome evidence, the application rubric, and the funder’s current AI and disclosure rules."
   },
   {
     "id": "funder-research",
@@ -88,7 +94,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less manual reading of public funder guidance.",
+      "A more consistent shortlist with visible sources and reasons for fit."
+    ],
+    "inPractice": "An environmental charity compares ten public funder pages against its restoration program. Claude assembles a criteria table and flags unclear eligibility. Development staff check the original pages and choose which relationships to pursue.",
+    "inputs": "Current public funder pages, mission and geography criteria, and a staff owner to verify deadlines and eligibility."
   },
   {
     "id": "donor-stewardship",
@@ -117,7 +129,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less time preparing routine thank-you drafts.",
+      "More consistent use of approved program updates and donor preferences."
+    ],
+    "inPractice": "A food pantry drafts thank-you messages from approved giving facts and a current service update. Claude proposes wording for staff to review. The development team checks names, preferences, amounts, and tone before sending.",
+    "inputs": "Approved giving and program facts, communication preferences, a style guide, and permission to use the selected data."
   },
   {
     "id": "campaign-planning",
@@ -146,7 +164,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Faster preparation of campaign outlines and content calendars.",
+      "Earlier visibility into audience, staffing, and evidence gaps."
+    ],
+    "inPractice": "An arts nonprofit plans an appeal around a completed education program. Claude drafts a campaign calendar and alternative messages using verified program facts. Staff review the workload, claims, and audience fit before approving any outreach.",
+    "inputs": "Campaign goals, approved stories and facts, audience guidance, available staff capacity, and a reviewed budget."
   },
   {
     "id": "grant-progress",
@@ -175,7 +199,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less manual assembly of recurring funder reports.",
+      "Clearer links between award requirements and documented progress."
+    ],
+    "inPractice": "A housing nonprofit combines approved aggregate service counts, expenditure summaries, and an award checklist into a report draft. Claude flags missing evidence. Program and finance staff reconcile the figures and approve the report.",
+    "inputs": "Award terms, funder AI rules, approved aggregate program data, finance summaries, and named program and finance reviewers."
   },
   {
     "id": "impact-report",
@@ -204,7 +234,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less time turning approved evidence into readable report sections.",
+      "More consistent traceability between impact claims and supporting records."
+    ],
+    "inPractice": "A community foundation drafts a report section from approved grant totals and evaluation summaries. Claude organizes the narrative and marks claims needing support. Staff verify calculations, consent for stories, and what the data can actually demonstrate.",
+    "inputs": "Approved outcome evidence, reconciled totals, authorized stories, and an editorial owner who can distinguish outputs from outcomes."
   },
   {
     "id": "survey-themes",
@@ -233,7 +269,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Faster development of an initial question set and theme summary.",
+      "More staff capacity to investigate disagreement and underrepresented feedback."
+    ],
+    "inPractice": "A community service team asks Claude to draft feedback questions, then summarize a de-identified historical response set. An evaluator compares the themes with independent human coding and checks whether minority views were missed.",
+    "inputs": "A clear evaluation question, appropriately de-identified responses, participant consent where required, and an independent evaluation reviewer."
   },
   {
     "id": "logic-model",
@@ -262,7 +304,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Faster organization of activities, outputs, and intended outcomes.",
+      "A clearer starting point for discussing assumptions with staff and participants."
+    ],
+    "inPractice": "A workforce nonprofit maps a workshop’s resources, activities, and intended outcomes. Claude proposes a logic model and questions about causal assumptions. Staff and participant representatives revise it together before using it for planning.",
+    "inputs": "Program goals, activities and resources, existing evidence, and staff and participant input to challenge assumptions."
   },
   {
     "id": "board-packets",
@@ -291,7 +339,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less time assembling recurring board materials.",
+      "Earlier detection of missing attachments and inconsistent document versions."
+    ],
+    "inPractice": "A small charity provides a meeting agenda, approved reports, and an attachment checklist. Claude organizes a draft packet and lists missing items. The board secretary checks completeness, permissions, and versions before distribution.",
+    "inputs": "Approved agenda and reports, a packet checklist, document access rules, and an authorized board secretary or staff reviewer."
   },
   {
     "id": "policy-guidance",
@@ -320,7 +374,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less staff time locating routine policy passages.",
+      "More traceable answers through references to approved documents."
+    ],
+    "inPractice": "A nonprofit staff member asks where to find the expense reimbursement rules. Claude retrieves relevant passages from approved policies and cites the source. Questions with missing or conflicting guidance go to the policy owner.",
+    "inputs": "Current approved policies, version ownership, access controls, and an escalation path for unresolved questions."
   },
   {
     "id": "budget-variance",
@@ -349,7 +409,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less time preparing a first narrative of budget differences.",
+      "A consistent checklist of variances needing accountant investigation."
+    ],
+    "inPractice": "A finance team supplies reconciled budget and actual figures for a closed period. Claude drafts a variance narrative and identifies questions about unusual movements. An accountant verifies arithmetic and determines causes from supporting records.",
+    "inputs": "Reconciled budget and actuals, account definitions, supporting records, and an accountant responsible for review."
   },
   {
     "id": "audit-evidence",
@@ -378,7 +444,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less administrative effort organizing evidence requests.",
+      "Earlier identification of missing or mismatched support."
+    ],
+    "inPractice": "A nonprofit finance team organizes a completed audit request list and approved supporting documents. Claude creates an evidence index and flags gaps. Finance staff verify the attachments; the auditor retains responsibility for audit conclusions.",
+    "inputs": "An auditor request list, authorized supporting documents, secure access, and a finance reviewer to confirm completeness."
   },
   {
     "id": "volunteer-onboarding",
@@ -407,7 +479,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less time drafting role-specific onboarding materials.",
+      "More consistent communication of role boundaries and required safety steps."
+    ],
+    "inPractice": "A food distribution team turns approved role descriptions and procedures into an onboarding packet. Claude drafts a checklist and routine questions. The volunteer coordinator verifies safeguarding and safety requirements, then tests comprehension with volunteers.",
+    "inputs": "Approved role descriptions, safety and safeguarding procedures, accessibility needs, and a volunteer coordinator who owns approval."
   },
   {
     "id": "staff-training",
@@ -436,7 +514,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less effort converting approved policies into learning materials.",
+      "More consistent explanations and practice questions across staff groups."
+    ],
+    "inPractice": "A nonprofit operations lead turns a reviewed purchasing policy into a short guide and quiz. Claude drafts examples from permitted scenarios. Staff test the guide, and the policy owner checks that examples match the actual rules.",
+    "inputs": "Current policies, learning objectives, permitted examples, and a subject-matter owner to review and test the guide."
   },
   {
     "id": "accessible-content",
@@ -465,7 +549,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less time preparing plain-language alternatives.",
+      "A better starting point for improving participant comprehension."
+    ],
+    "inPractice": "A service nonprofit revises appointment instructions into shorter sentences and a clear checklist. Claude suggests wording while preserving requirements. Representative users test the draft, and staff check that no eligibility or safety information was lost.",
+    "inputs": "Approved original instructions, reading and accessibility goals, representative user feedback, and a service owner to verify meaning."
   },
   {
     "id": "translation-drafts",
@@ -492,7 +582,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Faster preparation of multilingual first drafts.",
+      "More bilingual reviewer capacity for meaning, local usage, and sensitive wording."
+    ],
+    "inPractice": "A community nonprofit drafts routine event messages in two languages. Claude prepares translations from approved text. Bilingual reviewers check meaning, dates, names, and local usage before publication; consequential instructions receive qualified review.",
+    "inputs": "Approved source text, target languages and audience context, a terminology guide, and qualified bilingual reviewers."
   },
   {
     "id": "internal-tool",
@@ -521,7 +617,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less developer time navigating unfamiliar code and preparing small changes.",
+      "More capacity to document and test routine maintenance."
+    ],
+    "inPractice": "A nonprofit developer asks Claude Code to explain an internal application and propose a small reporting fix. The developer reviews the diff, runs tests in a separate environment, and deploys only after the change meets normal approval requirements.",
+    "inputs": "Authorized code access, a test environment, a technical owner, regression tests, and a rollback plan."
   },
   {
     "id": "accessible-forms",
@@ -550,7 +652,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Faster preparation of fixes for documented form barriers.",
+      "Potentially easier task completion after user and assistive-technology testing."
+    ],
+    "inPractice": "A museum developer supplies a verified accessibility audit for a registration form. Claude Code proposes label and keyboard-navigation fixes. The developer tests with assistive technology and users before approving the update.",
+    "inputs": "A verified accessibility audit, source code, representative test users, assistive-technology testing, and a developer responsible for release."
   },
   {
     "id": "crm-integration",
@@ -579,7 +687,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less effort drafting integration code and field mappings.",
+      "More capacity to test data consistency before connecting operational systems."
+    ],
+    "inPractice": "A charity developer builds a read-only test connection between a CRM and a reporting tool using synthetic donor records. Claude Code helps draft mappings and tests. The developer verifies permissions, field accuracy, and failure handling.",
+    "inputs": "API documentation, approved field mappings, synthetic test records, least-privilege access, and an integration owner."
   },
   {
     "id": "reporting-pipeline",
@@ -608,7 +722,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less manual effort maintaining repeatable reporting transformations.",
+      "More reproducible program reports with explicit data checks."
+    ],
+    "inPractice": "A program analyst and developer refactor a historical reporting pipeline with Claude Code. They compare outputs against verified totals, document transformations, and test missing-data behavior before adopting the pipeline.",
+    "inputs": "Defined metrics, historical test data, verified reference outputs, data-quality rules, and a technical maintenance owner."
   },
   {
     "id": "participant-faq",
@@ -636,7 +756,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Potentially quicker access to routine, verified service information.",
+      "More staff capacity for complex questions through appropriate escalation."
+    ],
+    "inPractice": "A charity prototypes a FAQ limited to locations, opening hours, and appointment steps. An API-based assistant answers from approved content and directs unresolved questions to staff. The team tests misleading questions and escalation before a public pilot.",
+    "inputs": "A narrow approved knowledge base, a technical operator, access and privacy controls, monitoring, and staffed escalation."
   },
   {
     "id": "intake-summary",
@@ -661,7 +787,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less caseworker effort organizing intake information.",
+      "More review time for missing facts and participant-specific needs."
+    ],
+    "inPractice": "A service team tests summaries of de-identified completed intakes. Claude groups stated needs and unanswered questions without inferring eligibility. Caseworkers compare each draft with the original and remain responsible for case decisions.",
+    "inputs": "Permitted de-identified records for the pilot, a summary template, confidential data controls, and trained caseworker review."
   },
   {
     "id": "housing-reports",
@@ -683,7 +815,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less effort assembling findings from inspection packets.",
+      "More visible references to documented issues needing follow-up."
+    ],
+    "inPractice": "A housing charity summarizes historical inspection notes and signed findings into a follow-up draft. Claude links each item to a record. A qualified reviewer confirms the findings; the draft does not decide tenancy or legal compliance.",
+    "inputs": "Authorized inspection records, signed findings, a reporting template, and a qualified housing reviewer."
   },
   {
     "id": "food-distribution",
@@ -706,7 +844,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less time preparing routine distribution summaries.",
+      "Earlier visibility into missing counts and reporting inconsistencies."
+    ],
+    "inPractice": "A food bank uses validated aggregate weekly counts to draft a distribution update. Claude organizes location totals and flags missing entries. Operations staff reconcile the counts before using the report for planning or funder communication.",
+    "inputs": "Validated aggregate counts, metric definitions, reporting dates, and an operations reviewer to reconcile figures."
   },
   {
     "id": "health-education",
@@ -729,7 +873,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less effort drafting patient-friendly versions of approved information.",
+      "More clinical reviewer capacity to check accuracy and comprehension."
+    ],
+    "inPractice": "A health nonprofit revises approved nonurgent education material into clearer language. Claude drafts alternatives grounded in supplied sources. A qualified clinician checks source fidelity and safety, and users test comprehension before publication.",
+    "inputs": "Current approved clinical sources, a defined audience, a qualified clinical reviewer, and user comprehension checks."
   },
   {
     "id": "teacher-materials",
@@ -752,7 +902,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less educator effort preparing initial lesson materials.",
+      "More capacity to adapt activities to learning goals and learner needs."
+    ],
+    "inPractice": "An education nonprofit drafts a reading activity from approved materials and lesson objectives. Claude proposes questions and alternative explanations. The educator checks factual accuracy, age appropriateness, and accessibility before classroom use.",
+    "inputs": "Approved teaching materials, learning objectives, age and accessibility requirements, and educator review."
   },
   {
     "id": "research-synthesis",
@@ -778,7 +934,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Faster organization of a bounded literature set.",
+      "More researcher time to evaluate evidence quality and conflicting findings."
+    ],
+    "inPractice": "A research nonprofit supplies public papers for a defined question. Claude drafts an evidence table with citations and limitations. A researcher checks every entry against the original papers and investigates disagreements or missing context.",
+    "inputs": "A fixed source set, a research question, an evidence appraisal rubric, and a researcher to verify citations and limitations."
   },
   {
     "id": "youth-activities",
@@ -803,7 +965,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less planning effort preparing supervised activities.",
+      "More staff capacity to adapt sessions for access, safety, and participation."
+    ],
+    "inPractice": "A youth charity drafts a supervised art session from approved goals and available materials. Claude suggests a timetable and adaptations. Program staff check safeguarding, supervision, and accessibility before running the session.",
+    "inputs": "Age-appropriate goals, supervision and safeguarding rules, available resources, and a trained youth-program reviewer."
   },
   {
     "id": "workforce-materials",
@@ -826,7 +994,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less facilitator effort drafting workshop handouts.",
+      "More capacity to tailor explanations to participant feedback."
+    ],
+    "inPractice": "A workforce charity prepares a job-readiness workshop from approved guidance. Claude drafts exercises and a facilitator guide. Staff and participants test usefulness and accuracy before delivery; the material does not select or rank job applicants.",
+    "inputs": "Approved guidance, workshop goals, participant access needs, and facilitator and participant feedback."
   },
   {
     "id": "exhibition-content",
@@ -849,7 +1023,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less time drafting initial labels and visitor explanations.",
+      "More curator capacity to check accuracy, context, and readability."
+    ],
+    "inPractice": "A museum supplies approved collection notes for five objects. Claude drafts short labels and an accessible tour summary. Curators verify provenance and interpretation, and visitors test comprehension before publication.",
+    "inputs": "Approved collection records, rights and provenance guidance, audience requirements, and curator review."
   },
   {
     "id": "conservation-reports",
@@ -873,7 +1053,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less effort assembling field observations into report drafts.",
+      "More expert time to evaluate uncertainty and ecological interpretation."
+    ],
+    "inPractice": "A conservation charity provides historical field observations and approved methods. Claude drafts a report with references to the records. An ecologist checks observation fidelity, missing limitations, and protection of sensitive species locations.",
+    "inputs": "Authorized field data, approved methods, sensitive-location handling rules, and an ecology reviewer."
   },
   {
     "id": "legal-intake",
@@ -897,7 +1083,13 @@ const useCases = [
       "faith",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less administrative effort organizing stated facts for a legal reviewer.",
+      "Clearer visibility into unanswered intake questions."
+    ],
+    "inPractice": "A legal-aid team tests draft briefs from de-identified closed matters. Claude organizes supplied facts and open questions without recommending a legal outcome. An authorized legal professional compares the brief with the record and approves its use.",
+    "inputs": "Permitted de-identified pilot records, confidentiality controls, an intake template, and qualified legal review."
   },
   {
     "id": "policy-analysis",
@@ -921,7 +1113,13 @@ const useCases = [
       "service",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less staff time organizing provisions from a fixed policy source set.",
+      "More traceable briefing drafts for human policy review."
+    ],
+    "inPractice": "An advocacy nonprofit summarizes a reviewed policy proposal and supporting public sources. Claude drafts a provision table and identifies uncertainties. A policy lead verifies citations, the organization’s permitted activities, and every public claim.",
+    "inputs": "Current primary policy sources, a defined research question, organizational advocacy rules, and policy review."
   },
   {
     "id": "faith-service",
@@ -941,7 +1139,13 @@ const useCases = [
       "service",
       "sponsored",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less effort drafting routine service-event materials.",
+      "More consistent communication of logistics and community access needs."
+    ],
+    "inPractice": "A congregation organizes a community meal using approved logistics and volunteer roles. Claude drafts invitations and task lists. Program and community leaders review accuracy, tone, accessibility, and safety before distributing materials.",
+    "inputs": "Approved logistics, role and safety guidance, community language and access needs, and program-leader review."
   },
   {
     "id": "foundation-diligence",
@@ -965,7 +1169,13 @@ const useCases = [
     "forms": [
       "grantmaker",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Less effort assembling a consistent due-diligence packet.",
+      "Earlier detection of missing facts and documents for grant officers."
+    ],
+    "inPractice": "A foundation recreates packets for five closed grants from authorized application records and a fixed checklist. Claude indexes evidence and flags gaps. Grant officers verify the facts and retain responsibility for funding decisions.",
+    "inputs": "Authorized application records, a diligence checklist, confidentiality rules, and a grant officer responsible for decisions."
   },
   {
     "id": "member-knowledge",
@@ -989,7 +1199,13 @@ const useCases = [
     "forms": [
       "membership",
       "intermediary"
-    ]
+    ],
+    "benefits": [
+      "Potentially faster answers to routine member questions.",
+      "More staff capacity for exceptions through cited answers and escalation."
+    ],
+    "inPractice": "A membership nonprofit prototypes an API assistant over approved member guidance. The team replays historical routine questions and checks citations, access rules, and escalation. Staff handle unresolved or consequential questions.",
+    "inputs": "An approved knowledge base, member access rules, a technical owner, monitoring, and staffed escalation."
   }
 ];
 const featuredCaseIds = ["grant-narratives", "donor-stewardship", "campaign-planning", "grant-progress", "impact-report", "survey-themes", "board-packets", "budget-variance", "volunteer-onboarding", "accessible-content", "reporting-pipeline", "foundation-diligence"];

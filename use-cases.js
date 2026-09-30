@@ -67,6 +67,20 @@ function setDetail(item) {
   detail.append(element('p', 'detail-kicker', departments[item.department] + ' / ' + (item.orgs.length === Object.keys(organizations).length ? 'All mission areas' : item.orgs.map(key => organizations[key]).join(' · '))));
   detail.append(element('h2', '', item.title));
   detail.append(element('p', '', item.summary));
+  const benefits = element('div', 'detail-value');
+  benefits.append(element('h3', '', 'Potential value'));
+  benefits.append(element('p', '', item.benefits.join(' ')));
+  benefits.append(element('small', '', 'Illustrative benefit to test in a pilot, not a measured outcome.'));
+  detail.append(benefits);
+  const example = element('details', 'detail-example');
+  example.append(element('summary', '', 'See an example in practice'));
+  for (const [title, value] of [['What this could look like in practice', item.inPractice], ['What your team would need', item.inputs]]) {
+    const section = element('div', 'detail-section');
+    section.append(element('h3', '', title), element('p', '', value));
+    example.append(section);
+  }
+  example.append(element('p', 'example-note', 'Illustrative JayAI example, not a documented customer deployment.'));
+  detail.append(example);
   const box = element('div', 'detail-route');
   box.append(element('span', '', 'Suggested starting route'));
   box.append(element('strong', '', (item.route === 'Cowork' ? 'Claude tasks (Cowork)' : 'Claude ' + item.route)));
@@ -117,7 +131,7 @@ function render() {
     (form.value === 'all' || item.forms.includes(form.value)) &&
     (department.value === 'all' || item.department === department.value) &&
     (route.value === 'all' || item.route === route.value) &&
-    (!q || [item.title, item.summary, departments[item.department], item.route, ...item.orgs.map(key => organizations[key])].join(' ').toLowerCase().includes(q))
+    (!q || [item.title, item.summary, ...item.benefits, item.inPractice, item.inputs, departments[item.department], item.route, ...item.orgs.map(key => organizations[key])].join(' ').toLowerCase().includes(q))
   );
   const matches = view === 'featured' ? allMatches.filter(item => featuredSet.has(item.id)) : allMatches;
   if (view === 'featured') matches.sort((a, b) => featuredCaseIds.indexOf(a.id) - featuredCaseIds.indexOf(b.id));
@@ -152,7 +166,7 @@ function render() {
     card.append(top);
     card.append(element('span', 'case-card-title', item.title));
     card.append(element('span', 'case-card-summary', item.summary));
-    card.append(element('span', 'case-card-bottom', 'View pilot and validation questions ↗'));
+    card.append(element('span', 'case-card-bottom', 'Explore value, example, and pilot ↗'));
     card.addEventListener('click', () => {
       setDetail(item);
       if (narrowLayout.matches) detail.scrollIntoView({behavior:'smooth', block:'start'});

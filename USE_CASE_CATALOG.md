@@ -71,3 +71,7 @@ Foundation workflows can span any mission. Faith-based organizations can work in
 ## Program versus catalog
 
 Browsing a workflow is not confirmation of a program discount. Team’s standard nonprofit list rate is $8 per user/month with a 2-seat minimum; the official program page also lists $3 for eligible nonprofits in low- or middle-income countries. Enterprise requires a quote here because official sources differ. No nonprofit discount is applied to API token rates. Confirm Code, task features, usage limits, connector access and any separate vendor costs for the exact purchased plan.
+
+## Selected-case explanations
+
+Every record includes two potential benefits (`benefits`), an illustrative practical example (`inPractice`), and required inputs (`inputs`). Benefits appear in the selected detail panel; the example and inputs expand on demand. Search includes these fields. These are JayAI editorial planning hypotheses, not source-verified customer deployments or quantitative outcome claims. Pilot measures and validation requirements remain case-specific.

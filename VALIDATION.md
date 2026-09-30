@@ -14,4 +14,6 @@ Workflow fit and route suggestions are editorial hypotheses. There is no indepen
 
 ## Rendered review
 
-Pending Vercel preview review. The local Chromium download failed, so the DOM checks above do not establish visual layout quality. A rendered browser review will be recorded before release.
+Rendered review passed for all four pages at 320, 390, 768 and 1440 pixels (16 page/viewport combinations). No horizontal overflow or uncaught page errors were found. Mission/form filtering, case-to-pilot navigation, seat/API handoffs and saved-note refresh passed at each width. Mobile screenshots of all four pages were visually inspected. The Vercel preview homepage, catalog and cost page were also inspected in the cloud browser.
+
+These are Chromium checks; Safari and real-device testing have not been performed. No live AI integration is present to exercise.

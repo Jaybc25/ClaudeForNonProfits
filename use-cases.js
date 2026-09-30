@@ -64,7 +64,7 @@ function setDetail(item) {
   selected = item.id;
   syncUrl(item);
   detail.replaceChildren();
-  detail.append(element('p', 'detail-kicker', departments[item.department] + ' / ' + item.orgs.map(key => organizations[key]).join(' · ')));
+  detail.append(element('p', 'detail-kicker', departments[item.department] + ' / ' + (item.orgs.length === Object.keys(organizations).length ? 'All mission areas' : item.orgs.map(key => organizations[key]).join(' · '))));
   detail.append(element('h2', '', item.title));
   detail.append(element('p', '', item.summary));
   const box = element('div', 'detail-route');
